@@ -46,3 +46,4 @@ group :development do
 end
 
 gem 'react-rails', '~> 1.8.0'
+gem 'bootstrap-sass'
