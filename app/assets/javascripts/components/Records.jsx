@@ -62,11 +62,11 @@ var Records = React.createClass({
       <div className='records'>
         <h2 className='title'> Records </h2>
         <div className='row'>
-          <AmountBox type='success' amount={this.credits()} text='Credit' />
-          <AmountBox type='danger' amount={this.debits()} text='Debit' />
-          <AmountBox type='info' amount={this.balance()} text='Balance' />
+          <AmountBox type='success' amount={ this.credits() } text='Credit' />
+          <AmountBox type='danger' amount={ this.debits() } text='Debit' />
+          <AmountBox type='info' amount={ this.balance() } text='Balance' />
         </div>
-        <RecordForm handleNewRecord={this.addRecord} />
+        <RecordForm handleNewRecord={ this.addRecord } />
         <hr />
         <table className='table table-bordered'>
           <thead>
@@ -81,7 +81,7 @@ var Records = React.createClass({
             {
               this.state.records.map(function(record) {
                 return (
-                  <Record key={record.id} record={record} handleDeleteRecord={this.deleteRecord} handleEditRecord={this.updateRecord} />
+                  <Record key={ record.id } record={ record } handleDeleteRecord={ this.deleteRecord } handleEditRecord={ this.updateRecord } />
                 );
               }.bind(this))
             }

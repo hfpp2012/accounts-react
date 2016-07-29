@@ -29,17 +29,17 @@ var RecordForm = React.createClass({
 
   render: function() {
     return (
-      <form className='form-inline' onSubmit={this.handleSubmit}>
+      <form className='form-inline' onSubmit={ this.handleSubmit }>
         <div className='form-group'>
-          <input type='text' className='form-control mr10' placeholder='Date' name='date' value={this.state.date} onChange={this.handleChange} />
+          <input type='text' className='form-control mr10' placeholder='Date' name='date' value={ this.state.date } onChange={ this.handleChange } />
         </div>
         <div className='form-group'>
-          <input type='text' className='form-control mr10' placeholder='Title' name='title' value={this.state.title} onChange={this.handleChange} />
+          <input type='text' className='form-control mr10' placeholder='Title' name='title' value={ this.state.title } onChange={ this.handleChange } />
         </div>
         <div className='form-group'>
-          <input type='text' className='form-control mr10' placeholder='Amount' name='amount' value={this.state.amount} onChange={this.handleChange} />
+          <input type='text' className='form-control mr10' placeholder='Amount' name='amount' value={ this.state.amount } onChange={ this.handleChange } />
         </div>
-        <button type="submit" className="btn btn-primary" disabled={!this.valid()}>Create record</button>
+        <button type="submit" className="btn btn-primary" disabled={ !this.valid() }>Create record</button>
       </form>
     )
   }
